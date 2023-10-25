@@ -1,0 +1,288 @@
+/* colors: */
+/* orange #ED7D31 */
+/* grey #4F4A45 */
+/* dark #300604 */
+/* white #F6F1EE */
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #f6f1ee;
+  color: #300604;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.header-logo {
+  display: flex;
+}
+
+.header-menu {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.header-link {
+  text-decoration: none;
+  color: #300604;
+  transition: 0.2s;
+}
+
+.header-link:hover {
+  color: #ed8f27;
+}
+
+.header-logo {
+  text-decoration: none;
+  color: #300604;
+  font-size: 15;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo-text {
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: capitalize;
+  transition: 0.2s;
+}
+
+.header-logo:hover {
+  color: #ed8f27;
+}
+
+.tongue {
+  transition: 0.2s;
+}
+
+.header-logo:hover .tongue {
+  transform: rotate(-15deg);
+}
+
+.header-svg {
+  position: relative;
+  top: 3px;
+  margin-right: 8px;
+}
+
+/* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
+
+.main {
+  padding: 0;
+}
+
+.main-items {
+  display: flex;
+}
+
+.main-left {
+  margin-top: -50px;
+}
+
+.main-about-h2 {
+  margin-bottom: 12px;
+}
+
+.main-about-p {
+  margin-bottom: 20px;
+}
+
+.bold-text {
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-top {
+  margin-bottom: 20px;
+}
+
+.form-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-bottom-left {
+  width: 50%;
+}
+
+label {
+  margin-right: 3px;
+}
+
+#lastname::placeholder,
+#firstname::placeholder,
+#email::placeholder {
+  color: #3006046a;
+}
+
+#birthdate,
+.firstname-box,
+.lastname-box,
+.email-box,
+.birthdate-box,
+.sex-box {
+  display: flex;
+  flex-grow: 1;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"] {
+  position: relative;
+  bottom: 2px;
+  background-color: #fce3c3;
+  border: 2px #300604 solid;
+  box-shadow: 8px 4px 0 #300604;
+  padding: 2px;
+  transition: 0.2s;
+  color: #300604;
+  flex-grow: 1;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus {
+  outline: none;
+  box-shadow: 12px 4px 0 #300604;
+}
+
+.sex-box {
+  display: flex;
+  gap: 8px;
+}
+
+.version-box {
+  display: flex;
+  gap: 10px;
+}
+
+.accept-terms {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#accept-terms {
+  margin-right: 6px;
+  accent-color: #b12800;
+  position: relative;
+  top: 2px;
+}
+
+.form-btn-submit {
+  background-color: #b12800;
+  color: #fce3c3;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  border: 3px #b12800 solid;
+  font-size: 24px;
+  padding: 2px 15px 5px;
+  margin-right: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 6px 6px 0 #300604;
+}
+
+.form-btn-reset {
+  background-color: #b12800;
+  color: #fce3c3;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  border: 3px #b12800 solid;
+  font-size: 24px;
+  padding: 2px 15px 5px;
+  margin-right: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 6px 6px 0 #300604;
+}
+
+.form-btn-submit:hover,
+.form-btn-reset:hover {
+  background-color: #fce3c3;
+  border: 3px #300604 solid;
+  color: #300604;
+  box-shadow: 10px 10px 0 #300604;
+}
+
+/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
+
+.footer {
+  background-color: #4f4a45;
+}
+
+.footer-items {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.footer-left-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-left-li {
+  margin-bottom: 6px;
+}
+
+.footer-link {
+  color: #f6f1ee;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.footer-link:hover {
+  color: #ed8f27;
+}
+
+.footer-divider {
+  height: 100px;
+  background-color: #f6f1ee;
+  width: 2px;
+  border-radius: 0.5px;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: right;
+}
+
+.footer-right-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-right-li {
+  margin-bottom: 6px;
+  text-align: start;
+}
