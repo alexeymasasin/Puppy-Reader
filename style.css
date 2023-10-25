@@ -26,6 +26,10 @@ body {
   margin: 0 auto;
 }
 
+.header {
+  z-index: 1000;
+}
+
 .header-items {
   display: flex;
   justify-content: space-between;
